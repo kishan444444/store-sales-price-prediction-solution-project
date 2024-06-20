@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+Google_Analytics_Customer_Revenue_Prediction.egg-info/PKG-INFO
+Google_Analytics_Customer_Revenue_Prediction.egg-info/SOURCES.txt
+Google_Analytics_Customer_Revenue_Prediction.egg-info/dependency_links.txt
+Google_Analytics_Customer_Revenue_Prediction.egg-info/requires.txt
+Google_Analytics_Customer_Revenue_Prediction.egg-info/top_level.txt
