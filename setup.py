@@ -15,7 +15,7 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 """
 setup(
-    name='Google Analytics Customer Revenue Prediction',
+    name='GoogleAnalyticsCustomerRevenuePrediction',
     version='0.0.1',
     author='Kishan verma',
     author_email='kishanverma4444@gmail.com',

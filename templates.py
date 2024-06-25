@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-package_name="Google Analytics Customer Revenue Prediction"
+package_name="GoogleAnalyticsCustomerRevenuePrediction"
 
 list_of_files=[
     "github/workflows/.gitkeep",
