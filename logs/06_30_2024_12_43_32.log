@@ -1,0 +1,42 @@
+[2024-06-30 12:43:37,411] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.31.239:80
+[2024-06-30 12:43:37,411] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-06-30 13:00:21,380] 224 werkzeug - INFO - 192.168.31.239 - - [30/Jun/2024 13:00:21] "GET / HTTP/1.1" 200 -
+[2024-06-30 13:00:21,534] 224 werkzeug - INFO - 192.168.31.239 - - [30/Jun/2024 13:00:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-06-30 13:00:34,052] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 13:00:34] "GET / HTTP/1.1" 200 -
+[2024-06-30 13:00:34,177] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 13:00:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-06-30 13:20:00,770] 224 werkzeug - INFO - 192.168.31.239 - - [30/Jun/2024 13:20:00] "GET / HTTP/1.1" 200 -
+[2024-06-30 13:20:13,467] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 13:20:13] "GET / HTTP/1.1" 200 -
+[2024-06-30 13:20:21,530] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 13:20:21] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 13:20:52,494] 1744 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 18, in predict_datapoint
+    Item_Weight = float(request.form.get('Item Weight')),
+TypeError: float() argument must be a string or a number, not 'NoneType'
+[2024-06-30 13:20:52,494] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 13:20:52] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-06-30 13:21:23,166] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 13:21:23] "GET / HTTP/1.1" 200 -
+[2024-06-30 13:21:31,379] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 13:21:31] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 13:21:42,422] 1744 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 18, in predict_datapoint
+    Item_Weight = float(request.form.get('Item Weight')),
+TypeError: float() argument must be a string or a number, not 'NoneType'
+[2024-06-30 13:21:42,423] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 13:21:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -

@@ -1,0 +1,52 @@
+[2024-06-30 22:40:43,972] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-06-30 22:40:43,974] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-06-30 22:40:54,482] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 22:40:54] "GET / HTTP/1.1" 200 -
+[2024-06-30 22:40:54,537] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 22:40:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-06-30 22:41:06,927] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 22:41:06] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 22:42:44,098] 1744 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "c:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\kisha\Desktop\myproject\app.py", line 17, in predict_datapoint
+    data=CustomData(Item_Identifier=int(request.form.get('Item Identifier')),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2024-06-30 22:42:44,115] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 22:42:44] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-06-30 22:42:56,744] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 22:42:56] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 22:43:38,055] 1744 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "c:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\kisha\Desktop\myproject\app.py", line 17, in predict_datapoint
+    data=CustomData(Item_Identifier=int(request.form.get('Item Identifier')),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2024-06-30 22:43:38,057] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 22:43:38] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-06-30 22:54:32,145] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 22:54:32] "GET / HTTP/1.1" 200 -
+[2024-06-30 22:54:32,320] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 22:54:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-06-30 22:54:36,790] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 22:54:36] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 22:54:59,247] 1744 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "c:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\kisha\Desktop\myproject\app.py", line 17, in predict_datapoint
+    data=CustomData(Item_Identifier=int(request.form.get('Item Identifier')),
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2024-06-30 22:54:59,250] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 22:54:59] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -

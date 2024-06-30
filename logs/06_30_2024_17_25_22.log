@@ -1,0 +1,24 @@
+[2024-06-30 17:25:23,233] 22 root - INFO - data_ingestion_started
+[2024-06-30 17:25:23,248] 26 root - INFO - I have read the dataset as df
+[2024-06-30 17:25:23,296] 30 root - INFO - i have saved the raw dataset in artifacts folder
+[2024-06-30 17:25:23,296] 32 root - INFO - here i had perform train_test_split
+[2024-06-30 17:25:23,298] 34 root - INFO - train_test_split completed
+[2024-06-30 17:25:23,387] 39 root - INFO - data ingestion part completed
+[2024-06-30 17:25:23,440] 86 root - INFO - read train and test data completed
+[2024-06-30 17:25:23,444] 87 root - INFO - Train Dataframe Head : 
+  Item_Identifier  Item_Weight Item_Fat_Content  Item_Visibility              Item_Type  Item_MRP Outlet_Identifier  Outlet_Establishment_Year Outlet_Size Outlet_Location_Type        Outlet_Type  Item_Outlet_Sales
+0           FDA15         9.30          Low Fat         0.016047                  Dairy  249.8092            OUT049                       1999      Medium               Tier 1  Supermarket Type1          3735.1380
+1           DRC01         5.92          Regular         0.019278            Soft Drinks   48.2692            OUT018                       2009      Medium               Tier 3  Supermarket Type2           443.4228
+2           FDN15        17.50          Low Fat         0.016760                   Meat  141.6180            OUT049                       1999      Medium               Tier 1  Supermarket Type1          2097.2700
+3           FDX07        19.20          Regular         0.000000  Fruits and Vegetables  182.0950            OUT010                       1998         NaN               Tier 3      Grocery Store           732.3800
+4           NCD19         8.93          Low Fat         0.000000              Household   53.8614            OUT013                       1987        High               Tier 3  Supermarket Type1           994.7052
+[2024-06-30 17:25:23,456] 88 root - INFO - Test Dataframe Head : 
+  Item_Identifier  Item_Weight Item_Fat_Content  Item_Visibility              Item_Type  Item_MRP Outlet_Identifier  Outlet_Establishment_Year Outlet_Size Outlet_Location_Type        Outlet_Type  Item_Outlet_Sales
+0           FDA15         9.30          Low Fat         0.016047                  Dairy  249.8092            OUT049                       1999      Medium               Tier 1  Supermarket Type1          3735.1380
+1           DRC01         5.92          Regular         0.019278            Soft Drinks   48.2692            OUT018                       2009      Medium               Tier 3  Supermarket Type2           443.4228
+2           FDN15        17.50          Low Fat         0.016760                   Meat  141.6180            OUT049                       1999      Medium               Tier 1  Supermarket Type1          2097.2700
+3           FDX07        19.20          Regular         0.000000  Fruits and Vegetables  182.0950            OUT010                       1998         NaN               Tier 3      Grocery Store           732.3800
+4           NCD19         8.93          Low Fat         0.000000              Household   53.8614            OUT013                       1987        High               Tier 3  Supermarket Type1           994.7052
+[2024-06-30 17:25:23,456] 47 root - INFO - Pipeline Initiated
+[2024-06-30 17:25:23,526] 128 root - INFO - Applying preprocessing object on training and testing datasets.
+[2024-06-30 17:25:23,529] 139 root - INFO - preprocessing pickle file saved

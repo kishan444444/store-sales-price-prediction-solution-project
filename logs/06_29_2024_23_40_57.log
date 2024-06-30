@@ -1,0 +1,60 @@
+[2024-06-29 23:40:59,796] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-06-29 23:40:59,796] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-06-29 23:41:51,338] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:41:51] "GET / HTTP/1.1" 200 -
+[2024-06-29 23:41:51,399] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:41:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-06-29 23:45:22,928] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:45:22] "GET / HTTP/1.1" 200 -
+[2024-06-29 23:45:30,298] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:45:30] "GET / HTTP/1.1" 200 -
+[2024-06-29 23:46:24,652] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:46:24] "GET /predict HTTP/1.1" 200 -
+[2024-06-29 23:51:12,531] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:51:12] "GET /predict HTTP/1.1" 200 -
+[2024-06-29 23:51:17,086] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:51:17] "GET / HTTP/1.1" 200 -
+[2024-06-29 23:51:24,415] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:51:24] "GET / HTTP/1.1" 200 -
+[2024-06-29 23:51:32,486] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:51:32] "GET /predict HTTP/1.1" 200 -
+[2024-06-29 23:52:48,053] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:52:48] "GET /predict HTTP/1.1" 200 -
+[2024-06-29 23:52:54,779] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:52:54] "GET / HTTP/1.1" 200 -
+[2024-06-29 23:53:02,768] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:53:02] "GET /predict HTTP/1.1" 200 -
+[2024-06-29 23:56:57,872] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:56:57] "GET /predict HTTP/1.1" 200 -
+[2024-06-29 23:57:05,871] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:57:05] "GET / HTTP/1.1" 200 -
+[2024-06-29 23:57:13,454] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:57:13] "GET /predict HTTP/1.1" 200 -
+[2024-06-29 23:58:35,234] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:58:35] "GET /predict HTTP/1.1" 200 -
+[2024-06-29 23:58:40,119] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:58:40] "GET /predict HTTP/1.1" 200 -
+[2024-06-29 23:58:43,458] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:58:43] "GET /predict HTTP/1.1" 200 -
+[2024-06-29 23:58:46,532] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:58:46] "GET / HTTP/1.1" 200 -
+[2024-06-29 23:58:54,088] 224 werkzeug - INFO - 127.0.0.1 - - [29/Jun/2024 23:58:54] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:07:56,172] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:07:56] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:07:59,292] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:07:59] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:09:39,141] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:09:39] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:11:22,619] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:11:22] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:11:26,265] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:11:26] "GET / HTTP/1.1" 200 -
+[2024-06-30 00:11:37,713] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:11:37] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:14:09,239] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:14:09] "[33mGET /predicted HTTP/1.1[0m" 404 -
+[2024-06-30 00:14:12,266] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:14:12] "[33mGET /predicted HTTP/1.1[0m" 404 -
+[2024-06-30 00:14:21,718] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:14:21] "GET / HTTP/1.1" 200 -
+[2024-06-30 00:14:29,946] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:14:29] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:14:34,950] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:14:34] "[33mGET /predicted HTTP/1.1[0m" 404 -
+[2024-06-30 00:16:10,207] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:16:10] "[33mGET /predicted HTTP/1.1[0m" 404 -
+[2024-06-30 00:16:14,138] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:16:14] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:20:02,595] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:20:02] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:20:04,132] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:20:04] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:20:07,672] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:20:07] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:20:13,719] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:20:13] "GET / HTTP/1.1" 200 -
+[2024-06-30 00:20:21,103] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:20:21] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:22:40,759] 1744 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 18, in predict_datapoint
+    Item_Weight = float(request.form.get('Item Weight')),
+TypeError: float() argument must be a string or a number, not 'NoneType'
+[2024-06-30 00:22:40,775] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:22:40] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-06-30 00:23:39,383] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:23:39] "GET /predict HTTP/1.1" 200 -
+[2024-06-30 00:23:39,470] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:23:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-06-30 00:24:01,165] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:24:01] "GET / HTTP/1.1" 200 -
+[2024-06-30 00:24:01,295] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:24:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-06-30 00:26:59,987] 224 werkzeug - INFO - 127.0.0.1 - - [30/Jun/2024 00:26:59] "GET /predict HTTP/1.1" 200 -
