@@ -3,4 +3,4 @@ WORKDIR / service
 COPY requirements.txt .
 COPY . ./
 RUN pip install -r requirements.txt
-ENDPOINT ["python3","app.py"]
+ENTRYPOINT [ "executable" ] ["python3","app.py"]

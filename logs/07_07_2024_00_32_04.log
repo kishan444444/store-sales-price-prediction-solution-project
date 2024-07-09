@@ -1,0 +1,20 @@
+[2024-07-07 00:32:06,002] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-07-07 00:32:06,003] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-07-07 00:32:22,063] 224 werkzeug - INFO - 127.0.0.1 - - [07/Jul/2024 00:32:22] "GET / HTTP/1.1" 200 -
+[2024-07-07 00:32:36,464] 224 werkzeug - INFO - 127.0.0.1 - - [07/Jul/2024 00:32:36] "GET / HTTP/1.1" 200 -
+[2024-07-07 00:32:41,226] 224 werkzeug - INFO - 127.0.0.1 - - [07/Jul/2024 00:32:41] "GET /predict HTTP/1.1" 200 -
+[2024-07-07 00:32:53,353] 1744 app3 - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app3.py", line 32, in predict_datapoint
+    Item_Identifier1=int(Item_Identifier)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+[2024-07-07 00:32:53,355] 224 werkzeug - INFO - 127.0.0.1 - - [07/Jul/2024 00:32:53] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -

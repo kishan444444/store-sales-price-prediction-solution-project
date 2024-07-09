@@ -1,0 +1,19 @@
+[2024-07-06 19:57:54,792] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-07-06 19:57:54,793] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-07-06 19:57:58,323] 224 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 19:57:58] "GET / HTTP/1.1" 200 -
+[2024-07-06 19:58:01,397] 224 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 19:58:01] "GET /predict HTTP/1.1" 200 -
+[2024-07-06 19:58:12,991] 1744 app1 - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kisha\Desktop\myproject\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app1.py", line 19, in predict_datapoint
+    result=print(Item_Identifier= request.form.get('Item Identifier'),
+TypeError: print() takes at most 4 keyword arguments (9 given)
+[2024-07-06 19:58:12,995] 224 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 19:58:12] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -

@@ -2,23 +2,23 @@
 <body>
 <form action="{{url_for('predict_datapoint')}}" method="POST">
     <div class="form-group">
-        <label for="Item Identifier  ">Item_Identifier :</label>
-        <input type="text" id="Item Identifier  " name="Item Identifier  " placeholder="Enter Item Identifier  value (object)">
-    </div>
-
-    <div class="form-group">
-      <label for="Item Weight ">Item_Weight:</label>
-      <input type="text" id="Item Weight " name="Item Weight " placeholder="Enter Item Weight  value (float)">
+    <label for="Item Identifier">Item_Identifier:</label>
+    <input type="number" id="Item Identifier" name="Item Identifier" min="1" max="1000">
     </div>
     
     <div class="form-group">
-        <label for="Item Visibility">Item_Visibilit:</label>
+      <label for="Item Weight ">Item_Weight:</label>
+      <input type="text" id="Item Weight" name="Item Weight" placeholder="Enter Item Weight value (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="Item Visibility">Item_Visibility:</label>
         <input type="text" id="Item Visibility" name="Item Visibility" placeholder="Enter Item Visibility value (float)">
     </div>
 
     <div class="form-group">  
         <label for="Item MRP ">Item_MRP:</label>
-        <input type="text" id="Item MRP " name="Item MRP " placeholder="Enter Item MRP  value (float)">
+        <input type="text" id="Item MRP" name="Item MRP" placeholder="Enter Item MRP value (float)">
     </div>
     
 <div class="form-group">
@@ -75,7 +75,7 @@
 
 <div class="form-group">
     <label for="Outlet Type">Outlet_Type:</label>
-    <select id="Outlet_Type" name="Outlet_Type">
+    <select id="Outlet Type" name="Outlet Type">
       <option value="Supermarket Type1">Supermarket Type1</option>
       <option value="Grocery Store">Grocery Store</option>
       <option value="Supermarket Type3">Supermarket Type3</option>
