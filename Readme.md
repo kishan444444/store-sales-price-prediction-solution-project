@@ -22,7 +22,7 @@ The project focuses on building a predictive model that can accurately forecast 
 - Pandas
 - NumPy
 - Scikit-learn
-- XGBoost (if used)
+- Random forest
 - Matplotlib/Seaborn (for data visualization)
 - Flask/FastAPI (for exposing model as an API)
 
